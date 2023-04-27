@@ -1,0 +1,31 @@
+
+//if the string the first input
+
+
+String string1="abd(jnb)asdf";
+
+String[] result1=string1.split("\\(");
+System.out.println(result1[0]+"("+result1[1].charAt(2)+result1[1].charAt(1)+result1[1].charAt(0)+")"+result1[1].split("\\)")[1]);
+
+
+//if the string the second input
+
+
+String string2="dd(df)a(ghhh)";
+
+String[] result2=string2.split("\\(");
+System.out.println(result2[0]+"("+result2[1].charAt(1)+result2[1].charAt(0)+")"+result2[1].split("\\)")[1]+"("+result2[2].charAt(3)+result2[2].charAt(2)+result2[2].charAt(1)+result2[2].charAt(0)+")");
+
+
+//if the string the third input
+
+
+String string3="abdjnbasdf";
+
+
+if(!string3.contains("(")||!string3.contains(")")){
+
+System.out.println(string3);
+
+
+}
